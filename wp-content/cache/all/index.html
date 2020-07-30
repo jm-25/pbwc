@@ -10,8 +10,8 @@
 <link rel="alternate" type="application/rss+xml" title="Punta Burros &raquo; Feed" href="/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Punta Burros &raquo; Comments Feed" href="/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Punta Burros &raquo; Home Page Comments Feed" href="/sample-page/feed/" />
-<!-- <link rel='stylesheet' id='wp-block-library-css'  href='/wp-includes/css/dist/block-library/style.min.css?ver=5.4.1' type='text/css' media='all' /> -->
-<!-- <link rel='stylesheet' id='viral-news-style-css'  href='/wp-content/themes/viral-news/style.css?ver=5.4.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wp-block-library-css'  href='/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='viral-news-style-css'  href='/wp-content/themes/viral-news/style.css?ver=5.4.2' type='text/css' media='all' /> -->
 <link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/ft8xzn3p/auqw.css" media="all"/>
 <style id='viral-news-style-inline-css' type='text/css'>
 body,button,input,select,textarea{
@@ -25,7 +25,7 @@ border-left-color:#000000;}
 .comment-navigation .nav-previous a:after{
 border-right-color:#000000;}
 </style>
-<!-- <link rel='stylesheet' id='viral-news-child-style-css'  href='/wp-content/themes/viral-news-child/style.css?ver=5.4.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='viral-news-child-style-css'  href='/wp-content/themes/viral-news-child/style.css?ver=5.4.2' type='text/css' media='all' /> -->
 <link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/7z5739fu/auqw.css" media="all"/>
 <link rel='stylesheet' id='viral-news-fonts-css'  href='//fonts.googleapis.com/css?family=Playfair+Display%3A400%2C400i%2C700%7CLibre+Baskerville%3A400%2C400i%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 <!-- <link rel='stylesheet' id='font-awesome-4.7-css'  href='/wp-content/themes/viral-news/css/font-awesome.css?ver=1.0.9' type='text/css' media='all' /> -->
@@ -68,7 +68,8 @@ gtag('config', 'UA-167313611-1');
 <div class="vl-top-header vl-dark">
 <div class="vl-container">
 <div class="vl-top-left-header">
-<span><i class="fa fa-clock-o" aria-hidden="true"></i>Thursday, May 21</span>                            </div>
+<span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i></span>                               
+</div>
 <div class="vl-top-right-header">
 </div>
 </div>
@@ -84,7 +85,27 @@ gtag('config', 'UA-167313611-1');
 <nav id="vl-site-navigation" class="vl-main-navigation vl-light">
 </nav>
 </header>
+<script>
+jQuery( document ).ready(function($) {
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if (iOS) {
+$( ".message" ).append( "<blockquote>This cam doesn't work on iphone :(</blockquote>" );
+$( ".message" ).append( "<blockquote>Esta camara no funciona en iphone</blockquote>" );
+} else if(isSafari) {
+$( ".message" ).append( "<blockquote>Attention! The cam doesn't work on this browser (complain to Apple). Get <a href='https://www.google.com/chrome/'>chrome</a> instead</blockquote>" );
+$( ".message" ).append( "<blockquote>Atención! La camara no funciona en iphone o safari, si tienes una mac descarga <a href='https://www.google.com/chrome/'>chrome</a></blockquote>" );
+}
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = 		today.toLocaleString('default', { month: 'long' });
+var yyyy = today.getFullYear();
+today = mm + ' ' + dd + ', ' + yyyy;
+$( ".date" ).append( today );
+});
+</script>
 <div id="vl-content" class="vl-site-content">
+<div class="message vl-container"></div>
 <div class="vl-container vl-clearfix">
 <div class="vl-content-wrap vl-clearfix">
 <div id="primary" class="content-area">
@@ -134,4 +155,4 @@ console.log(video.currentTime);
 <!-- <script type='text/javascript' src='/wp-content/cache/wpfc-minified/l8ncq4c8/auqw.js'></script> -->
 <!-- <script type='text/javascript' src='/wp-content/cache/wpfc-minified/1mu21215/auqw.js'></script> -->
 </body>
-</html><!-- WP Fastest Cache file was created in 0.50968599319458 seconds, on 21-05-20 16:12:54 -->
+</html><!-- WP Fastest Cache file was created in 0.4574408531189 seconds, on 29-07-20 18:45:48 -->

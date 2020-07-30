@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<title>Punta Burros Webcam - Surfing Riviera Nayarit</title>
+<title>Punta Burros Webcam -Surfing Riviera Nayarit</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Punta Burros &raquo; Feed" href="/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Punta Burros &raquo; Comments Feed" href="/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Punta Burros &raquo; Home Page Comments Feed" href="/sample-page/feed/" />
-<!-- <link rel='stylesheet' id='wp-block-library-css'  href='/wp-includes/css/dist/block-library/style.min.css?ver=5.4.1' type='text/css' media='all' /> -->
-<!-- <link rel='stylesheet' id='viral-news-style-css'  href='/wp-content/themes/viral-news/style.css?ver=5.4.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wp-block-library-css'  href='/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='viral-news-style-css'  href='/wp-content/themes/viral-news/style.css?ver=5.4.2' type='text/css' media='all' /> -->
 <link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/ft8xzn3p/auqw.css" media="all"/>
 <style id='viral-news-style-inline-css' type='text/css'>
 body,button,input,select,textarea{
@@ -25,7 +25,7 @@ border-left-color:#000000;}
 .comment-navigation .nav-previous a:after{
 border-right-color:#000000;}
 </style>
-<!-- <link rel='stylesheet' id='viral-news-child-style-css'  href='/wp-content/themes/viral-news-child/style.css?ver=5.4.1' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='viral-news-child-style-css'  href='/wp-content/themes/viral-news-child/style.css?ver=5.4.2' type='text/css' media='all' /> -->
 <link rel="stylesheet" type="text/css" href="/wp-content/cache/wpfc-minified/7z5739fu/auqw.css" media="all"/>
 <link rel='stylesheet' id='viral-news-fonts-css'  href='//fonts.googleapis.com/css?family=Playfair+Display%3A400%2C400i%2C700%7CLibre+Baskerville%3A400%2C400i%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 <!-- <link rel='stylesheet' id='font-awesome-4.7-css'  href='/wp-content/themes/viral-news/css/font-awesome.css?ver=1.0.9' type='text/css' media='all' /> -->
@@ -44,7 +44,7 @@ border-right-color:#000000;}
 <meta property="og:image" content="/wp-content/uploads/2020/05/584204204e65fad6a77091f3_1500.jpg">
 <meta property="og:image:width" content="1500">
 <meta property="og:image:height" content="1000">
-<meta property="og:description" content="Working! Punta Burros surf spot Riviera Nayarit Mexico. Live camera from Hotel Palladium. Check out the surfing action!">
+<meta property="og:description" content="Punta Burros surf spot Riviera Nayarit Mexico. Live camera from Hotel Palladium. Check out the surfing action!">
 <meta property="og:url" content="/">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Punta Burros">
@@ -68,7 +68,8 @@ gtag('config', 'UA-167313611-1');
 <div class="vl-top-header vl-dark">
 <div class="vl-container">
 <div class="vl-top-left-header">
-                          </div>
+<span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i></span>                               
+</div>
 <div class="vl-top-right-header">
 </div>
 </div>
@@ -84,7 +85,27 @@ gtag('config', 'UA-167313611-1');
 <nav id="vl-site-navigation" class="vl-main-navigation vl-light">
 </nav>
 </header>
+<script>
+jQuery( document ).ready(function($) {
+var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+if (iOS) {
+$( ".message" ).append( "<blockquote>This cam doesn't work on iphone :(</blockquote>" );
+$( ".message" ).append( "<blockquote>Esta camara no funciona en iphone</blockquote>" );
+} else if(isSafari) {
+$( ".message" ).append( "<blockquote>Attention! The cam doesn't work on this browser (complain to Apple). Get <a href='https://www.google.com/chrome/'>chrome</a> instead</blockquote>" );
+$( ".message" ).append( "<blockquote>Atención! La camara no funciona en iphone o safari, si tienes una mac descarga <a href='https://www.google.com/chrome/'>chrome</a></blockquote>" );
+}
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = 		today.toLocaleString('default', { month: 'long' });
+var yyyy = today.getFullYear();
+today = mm + ' ' + dd + ', ' + yyyy;
+$( ".date" ).append( today );
+});
+</script>
 <div id="vl-content" class="vl-site-content">
+<div class="message vl-container"></div>
 <div class="vl-container vl-clearfix">
 <div class="vl-content-wrap vl-clearfix">
 <div id="primary" class="content-area">
@@ -103,6 +124,19 @@ video.ontimeupdate = function() {
 console.log(video.currentTime);
 };
 </script>
+</div>
+  <div class="alert" style="
+    font-size: 13px;
+    line-height: 1.2em;
+    margin: 15px 0;
+    /* font-style: italic; */
+">
+	<p>Attention! The cam doesn't work on iphone or safari (complain to Apple).  if you are on your computer get <a href="https://www.google.com/chrome/" style="
+    text-decoration: underline;
+">chrome</a></p>
+	<p>Atención! La camara no funciona en iphone o safari, si tienes una mac descarga <a href="https://www.google.com/chrome/" style="
+    text-decoration: underline;
+">chrome</a></p>
 </div>
 </article>
 </div><!-- #primary -->
@@ -134,4 +168,8 @@ console.log(video.currentTime);
 <!-- <script type='text/javascript' src='/wp-content/cache/wpfc-minified/l8ncq4c8/auqw.js'></script> -->
 <!-- <script type='text/javascript' src='/wp-content/cache/wpfc-minified/1mu21215/auqw.js'></script> -->
 </body>
+<<<<<<< HEAD
+</html><!-- WP Fastest Cache file was created in 0.4574408531189 seconds, on 29-07-20 18:45:48 -->
+=======
 </html><!-- WP Fastest Cache file was created in 0.50968599319458 seconds, on 21-05-20 16:12:54 -->
+>>>>>>> origin/gh-pages
