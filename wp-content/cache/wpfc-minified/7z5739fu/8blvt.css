@@ -1,0 +1,16 @@
+.vl-container{max-width:900px;}
+.vl-container.vl-fullwidth{max-width:700px;}
+#primary{width:calc(100% - 260px);}
+#secondary{max-width:260px;padding:0 10px;}
+#secondary .widget-logo{padding-right:10px;padding-left:10px;}
+header .vl-top-header{position:absolute !important;width:100%;background-color:transparent !important;}
+header .vl-header{background-size:cover !important;background-position:center center !important;color:#fff;}
+header .vl-header a{color:#fff;}
+header .vl-header #vl-site-branding{width:100%;}
+.widget-area .widget{margin-bottom:15px;}
+.tides-widget__container .tides-widget__tables{grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));}
+.tides-widget__container .tides-widget__copyright{display:none;}
+.tides-widget__container caption{font-size:14px;}
+.tides-widget__container thead{text-align:left;font-size:12px;}
+.tides-widget__container tbody {
+font-size: 12px; }
