@@ -1,0 +1,83 @@
+/*
+Theme Name:     Viral-news-child
+Theme URI:      
+Description:    Viral-news child theme.
+Author:         Me
+Author URI:     
+Template:       viral-news
+Version:        0.1.0
+*/
+/* line 11, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+.vl-container {
+  max-width: 900px; }
+  /* line 13, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+  .vl-container.vl-fullwidth {
+    max-width: 700px; }
+
+/* line 17, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+#primary {
+  width: calc(100% - 260px); }
+
+/* line 20, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+#secondary {
+  max-width: 260px;
+  padding: 0 10px; }
+  /* line 23, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+  #secondary .widget-logo {
+    padding-right: 10px;
+    padding-left: 10px; }
+
+/* line 29, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+header .vl-top-header {
+  position: absolute !important;
+  width: 100%;
+  background-color: transparent !important; }
+
+/* line 34, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+header .vl-header {
+  background-size: cover !important;
+  background-position: center center !important;
+  color: #fff; }
+  /* line 38, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+  header .vl-header a {
+    color: #fff; }
+  /* line 41, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+  header .vl-header #vl-site-branding {
+    width: 100%; }
+
+/* line 47, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+.widget-area .widget {
+  margin-bottom: 15px; }
+
+/* line 51, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+.tides-widget__container .tides-widget__tables {
+  display: flex !important; }
+
+/* line 55, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+.tides-widget__container {
+  margin-top: 20px; }
+  /* line 57, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+  .tides-widget__container .tides-widget__table-container {
+    margin: 15px 0 !important; }
+    @media only screen and (max-width: 700px) {
+      /* line 61, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+      .tides-widget__container .tides-widget__table-container:nth-child(3) {
+        display: none; } }
+    @media only screen and (max-width: 452px) {
+      /* line 66, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+      .tides-widget__container .tides-widget__table-container:nth-child(2) {
+        display: none; } }
+    /* line 71, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+    .tides-widget__container .tides-widget__table-container caption {
+      text-align: center !important;
+      font-size: 14px; }
+    /* line 75, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+    .tides-widget__container .tides-widget__table-container thead {
+      text-align: left;
+      font-size: 12px; }
+    /* line 79, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+    .tides-widget__container .tides-widget__table-container tbody {
+      font-size: 12px; }
+  /* line 83, /Volumes/MacSSD/Users/more/Sites/puntaburroswebcam/wp/wp-content/themes/viral-news-child/style.scss */
+  .tides-widget__container .tides-widget__copyright {
+    display: none; }
